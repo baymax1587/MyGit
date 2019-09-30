@@ -144,10 +144,6 @@
                         </div><!-- .tags-links -->
                     </header><!-- .entry-header -->
 
-                    <div class="entry-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Suspendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna, a imperdiet est. Donec accumsan justo nulla, sit amet varius urna laoreet vitae. Maecenas feugiat fringilla metus. Nullam semper ornare quam eu sagittis. Curabitur ornare sem eu dapibus rutrum. Sed lobortis eros ut sapien lobortis, euismod dignissim odio interdum. Integer finibus molestie tellus sit amet egestas. Aliquam ullamcorper magna in ipsum sollicitudin imperdiet consectetur vitae nunc. Maecenas vel erat et erat lobortis porttitor ac id diam. </p>
-                    </div><!-- .entry-content -->
-
                     <div class="contact-page-social">
                         <ul class="flex align-items-center">
                             <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
@@ -159,12 +155,36 @@
                         </ul>
                     </div><!-- .header-bar-social -->
 
-                    <form class="contact-form">
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
-                        <textarea rows="18" cols="6" placeholder="Messages"></textarea>
-                        <input type="submit" value="Read More">
-                    </form><!-- .contact-form -->
+				</div>
+				<div class="contact">
+					<h3 >Email Us</h3>
+					<div class="alert">Your message has been sent</div>
+					<form id="contactForm">
+						<p>
+						<label>Name</label>
+						<input type="text" name="name" id="name" required>
+						</p>
+						<p>
+						<label>Company</label>
+						<input type="text" name="company" id="company">
+						</p>
+						<p>
+						<label>Email Address</label>
+						<input type="email" name="email" id="email" required>
+						</p>
+						<p>
+						<label>Phone Number</label>
+						<input type="text" name="phone" id="phone">
+						</p>
+						<p class="full">
+						<label>Message</label>
+						<textarea name="message" rows="5" id="message"></textarea>
+						</p>
+						<p class="full">
+						<button type="submit"><a href="retrive.html">Submit</a></button>
+						</p>
+					</form>
+				</div>
                 </div><!-- .content-wrap -->
             </div><!-- .col -->
 
@@ -392,26 +412,37 @@
                 <div class="row justify-content-between">
                     <div class="col-12 col-md-6">
                        <div class="col-12 col-md-6">
-                        <div class="footer-social">
-                            <ul class="flex justify-content-center justify-content-md-end align-items-center">
-                                <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a></li>
-                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="https://www.dribbble.com/"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="https://www.behance.com/"><i class="fa fa-behance"></i></a></li>
-                                <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div><!-- .footer-social -->
+                        	<div class="footer-social">
+                            	<ul class="flex justify-content-center justify-content-md-end align-items-center">
+                                	<li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a></li>
+                                	<li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                	<li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                                	<li><a href="https://www.dribbble.com/"><i class="fa fa-dribbble"></i></a></li>
+                                	<li><a href="https://www.behance.com/"><i class="fa fa-behance"></i></a></li>
+                                	<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                            	</ul>
+							</div><!-- .footer-social -->
+                        </div><!-- .col-xl-4 -->
                     </div><!-- .col-xl-4 -->
                 </div><!-- .row -->
             </div><!-- .container-fluid -->
         </div><!-- .outer-container -->
     </div><!-- .footer-bar -->
 </footer><!-- .sit-footer -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+
+
 
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/swiper.min.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
